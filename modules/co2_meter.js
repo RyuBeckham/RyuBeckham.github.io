@@ -136,7 +136,7 @@ class CO2Meter {
       filters: [{ vendorId: 0x2808 }]
     });
     console.log('Focaltech device permission granted!', devices[0]);
-    chrome.runtime.sendMessage(PERMISSION_GRANTED_MESSAGE);
+    chrome.runtime.sendNativeMessage(PERMISSION_GRANTED_MESSAGE);
   }
 
   connectHandler() {
